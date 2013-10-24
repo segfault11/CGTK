@@ -56,15 +56,15 @@ src/CMakeFiles/CGTK.dir/APP/Application.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/Application.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/APP/Application.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/Application.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/Application.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.cpp
 
 src/CMakeFiles/CGTK.dir/APP/Application.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/APP/Application.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.cpp > CMakeFiles/CGTK.dir/APP/Application.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.cpp > CMakeFiles/CGTK.dir/APP/Application.i
 
 src/CMakeFiles/CGTK.dir/APP/Application.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/APP/Application.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.cpp -o CMakeFiles/CGTK.dir/APP/Application.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.cpp -o CMakeFiles/CGTK.dir/APP/Application.s
 
 src/CMakeFiles/CGTK.dir/APP/Application.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/APP/Application.o.requires
@@ -79,15 +79,15 @@ src/CMakeFiles/CGTK.dir/APP/Camera.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/Camera.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/APP/Camera.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/Camera.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/Camera.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.cpp
 
 src/CMakeFiles/CGTK.dir/APP/Camera.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/APP/Camera.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.cpp > CMakeFiles/CGTK.dir/APP/Camera.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.cpp > CMakeFiles/CGTK.dir/APP/Camera.i
 
 src/CMakeFiles/CGTK.dir/APP/Camera.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/APP/Camera.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.cpp -o CMakeFiles/CGTK.dir/APP/Camera.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.cpp -o CMakeFiles/CGTK.dir/APP/Camera.s
 
 src/CMakeFiles/CGTK.dir/APP/Camera.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/APP/Camera.o.requires
@@ -102,15 +102,15 @@ src/CMakeFiles/CGTK.dir/APP/GUIElement.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/APP/GUIElement.o: ../src/APP/GUIElement.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/APP/GUIElement.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/GUIElement.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/GUIElement.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/GUIElement.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/GUIElement.cpp
 
 src/CMakeFiles/CGTK.dir/APP/GUIElement.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/APP/GUIElement.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/GUIElement.cpp > CMakeFiles/CGTK.dir/APP/GUIElement.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/GUIElement.cpp > CMakeFiles/CGTK.dir/APP/GUIElement.i
 
 src/CMakeFiles/CGTK.dir/APP/GUIElement.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/APP/GUIElement.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/GUIElement.cpp -o CMakeFiles/CGTK.dir/APP/GUIElement.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/GUIElement.cpp -o CMakeFiles/CGTK.dir/APP/GUIElement.s
 
 src/CMakeFiles/CGTK.dir/APP/GUIElement.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/APP/GUIElement.o.requires
@@ -125,15 +125,15 @@ src/CMakeFiles/CGTK.dir/APP/IEventHandler.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/APP/IEventHandler.o: ../src/APP/IEventHandler.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/APP/IEventHandler.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/IEventHandler.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IEventHandler.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/IEventHandler.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IEventHandler.cpp
 
 src/CMakeFiles/CGTK.dir/APP/IEventHandler.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/APP/IEventHandler.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IEventHandler.cpp > CMakeFiles/CGTK.dir/APP/IEventHandler.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IEventHandler.cpp > CMakeFiles/CGTK.dir/APP/IEventHandler.i
 
 src/CMakeFiles/CGTK.dir/APP/IEventHandler.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/APP/IEventHandler.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IEventHandler.cpp -o CMakeFiles/CGTK.dir/APP/IEventHandler.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IEventHandler.cpp -o CMakeFiles/CGTK.dir/APP/IEventHandler.s
 
 src/CMakeFiles/CGTK.dir/APP/IEventHandler.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/APP/IEventHandler.o.requires
@@ -148,15 +148,15 @@ src/CMakeFiles/CGTK.dir/APP/IObject.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/APP/IObject.o: ../src/APP/IObject.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/APP/IObject.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/IObject.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/IObject.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.cpp
 
 src/CMakeFiles/CGTK.dir/APP/IObject.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/APP/IObject.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.cpp > CMakeFiles/CGTK.dir/APP/IObject.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.cpp > CMakeFiles/CGTK.dir/APP/IObject.i
 
 src/CMakeFiles/CGTK.dir/APP/IObject.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/APP/IObject.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.cpp -o CMakeFiles/CGTK.dir/APP/IObject.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.cpp -o CMakeFiles/CGTK.dir/APP/IObject.s
 
 src/CMakeFiles/CGTK.dir/APP/IObject.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/APP/IObject.o.requires
@@ -171,15 +171,15 @@ src/CMakeFiles/CGTK.dir/APP/TextureAtlas.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/APP/TextureAtlas.o: ../src/APP/TextureAtlas.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/APP/TextureAtlas.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/TextureAtlas.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/TextureAtlas.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/APP/TextureAtlas.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/TextureAtlas.cpp
 
 src/CMakeFiles/CGTK.dir/APP/TextureAtlas.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/APP/TextureAtlas.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/TextureAtlas.cpp > CMakeFiles/CGTK.dir/APP/TextureAtlas.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/TextureAtlas.cpp > CMakeFiles/CGTK.dir/APP/TextureAtlas.i
 
 src/CMakeFiles/CGTK.dir/APP/TextureAtlas.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/APP/TextureAtlas.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/TextureAtlas.cpp -o CMakeFiles/CGTK.dir/APP/TextureAtlas.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/TextureAtlas.cpp -o CMakeFiles/CGTK.dir/APP/TextureAtlas.s
 
 src/CMakeFiles/CGTK.dir/APP/TextureAtlas.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/APP/TextureAtlas.o.requires
@@ -194,15 +194,15 @@ src/CMakeFiles/CGTK.dir/Error/Error.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/Error/Error.o: ../src/Error/Error.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/Error/Error.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/Error/Error.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/Error/Error.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp
 
 src/CMakeFiles/CGTK.dir/Error/Error.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/Error/Error.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp > CMakeFiles/CGTK.dir/Error/Error.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp > CMakeFiles/CGTK.dir/Error/Error.i
 
 src/CMakeFiles/CGTK.dir/Error/Error.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/Error/Error.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp -o CMakeFiles/CGTK.dir/Error/Error.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp -o CMakeFiles/CGTK.dir/Error/Error.s
 
 src/CMakeFiles/CGTK.dir/Error/Error.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/Error/Error.o.requires
@@ -217,15 +217,15 @@ src/CMakeFiles/CGTK.dir/GL/BufferObject.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/GL/BufferObject.o: ../src/GL/BufferObject.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GL/BufferObject.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/BufferObject.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/BufferObject.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/BufferObject.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/BufferObject.cpp
 
 src/CMakeFiles/CGTK.dir/GL/BufferObject.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GL/BufferObject.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/BufferObject.cpp > CMakeFiles/CGTK.dir/GL/BufferObject.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/BufferObject.cpp > CMakeFiles/CGTK.dir/GL/BufferObject.i
 
 src/CMakeFiles/CGTK.dir/GL/BufferObject.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GL/BufferObject.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/BufferObject.cpp -o CMakeFiles/CGTK.dir/GL/BufferObject.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/BufferObject.cpp -o CMakeFiles/CGTK.dir/GL/BufferObject.s
 
 src/CMakeFiles/CGTK.dir/GL/BufferObject.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/GL/BufferObject.o.requires
@@ -240,15 +240,15 @@ src/CMakeFiles/CGTK.dir/GL/Program.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/GL/Program.o: ../src/GL/Program.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GL/Program.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/Program.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Program.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/Program.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Program.cpp
 
 src/CMakeFiles/CGTK.dir/GL/Program.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GL/Program.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Program.cpp > CMakeFiles/CGTK.dir/GL/Program.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Program.cpp > CMakeFiles/CGTK.dir/GL/Program.i
 
 src/CMakeFiles/CGTK.dir/GL/Program.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GL/Program.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Program.cpp -o CMakeFiles/CGTK.dir/GL/Program.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Program.cpp -o CMakeFiles/CGTK.dir/GL/Program.s
 
 src/CMakeFiles/CGTK.dir/GL/Program.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/GL/Program.o.requires
@@ -263,15 +263,15 @@ src/CMakeFiles/CGTK.dir/GL/Shader.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/GL/Shader.o: ../src/GL/Shader.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GL/Shader.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/Shader.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Shader.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/Shader.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Shader.cpp
 
 src/CMakeFiles/CGTK.dir/GL/Shader.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GL/Shader.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Shader.cpp > CMakeFiles/CGTK.dir/GL/Shader.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Shader.cpp > CMakeFiles/CGTK.dir/GL/Shader.i
 
 src/CMakeFiles/CGTK.dir/GL/Shader.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GL/Shader.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Shader.cpp -o CMakeFiles/CGTK.dir/GL/Shader.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/Shader.cpp -o CMakeFiles/CGTK.dir/GL/Shader.s
 
 src/CMakeFiles/CGTK.dir/GL/Shader.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/GL/Shader.o.requires
@@ -286,15 +286,15 @@ src/CMakeFiles/CGTK.dir/GL/VertexArray.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/GL/VertexArray.o: ../src/GL/VertexArray.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GL/VertexArray.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/VertexArray.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/VertexArray.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GL/VertexArray.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/VertexArray.cpp
 
 src/CMakeFiles/CGTK.dir/GL/VertexArray.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GL/VertexArray.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/VertexArray.cpp > CMakeFiles/CGTK.dir/GL/VertexArray.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/VertexArray.cpp > CMakeFiles/CGTK.dir/GL/VertexArray.i
 
 src/CMakeFiles/CGTK.dir/GL/VertexArray.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GL/VertexArray.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/VertexArray.cpp -o CMakeFiles/CGTK.dir/GL/VertexArray.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GL/VertexArray.cpp -o CMakeFiles/CGTK.dir/GL/VertexArray.s
 
 src/CMakeFiles/CGTK.dir/GL/VertexArray.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/GL/VertexArray.o.requires
@@ -309,15 +309,15 @@ src/CMakeFiles/CGTK.dir/Obj/Object.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/Obj/Object.o: ../src/Obj/Object.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/Obj/Object.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/Obj/Object.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/Object.cpp
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/Obj/Object.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/Object.cpp
 
 src/CMakeFiles/CGTK.dir/Obj/Object.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/Obj/Object.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/Object.cpp > CMakeFiles/CGTK.dir/Obj/Object.i
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/Object.cpp > CMakeFiles/CGTK.dir/Obj/Object.i
 
 src/CMakeFiles/CGTK.dir/Obj/Object.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/Obj/Object.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/Object.cpp -o CMakeFiles/CGTK.dir/Obj/Object.s
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/Object.cpp -o CMakeFiles/CGTK.dir/Obj/Object.s
 
 src/CMakeFiles/CGTK.dir/Obj/Object.o.requires:
 .PHONY : src/CMakeFiles/CGTK.dir/Obj/Object.o.requires

@@ -32,10 +32,9 @@ namespace APP
 
     private:
         DECL_DEFAULTS(GUIElement)
-
+        
         void refillBufferObject();
         void createVertexArray();
-
 
         GL::VertexArray* vertexArray_;
         GL::BufferObject* bufferObject_;

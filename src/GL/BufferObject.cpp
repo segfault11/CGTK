@@ -11,10 +11,8 @@ GL::BufferObject::BufferObject(GLenum target, GLsizeiptr size, GLenum usage)
     glBufferData(target, size, NULL, usage);
 
     GLenum error = glGetError();
-    if (GL_NO_ERROR != error)
-    {
-        CGTK_REPORT((const char*)gluErrorString(error), CGTK_GL_ERROR);
-    }
+    CGTK_ASSERT(GL_NO_ERROR == error)
+
 }
 
 GL::BufferObject::~BufferObject()
@@ -32,10 +30,7 @@ void GL::BufferObject::SetData(
     glBufferSubData(target_, 0, size, data);
     
     GLenum error = glGetError();
-    if (GL_NO_ERROR != error)
-    {
-        CGTK_REPORT((const char*)gluErrorString(error), CGTK_GL_ERROR);
-    }    
+    CGTK_ASSERT(GL_NO_ERROR == error)
 }
 
 void GL::BufferObject::Bind()

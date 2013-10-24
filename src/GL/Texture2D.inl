@@ -32,7 +32,7 @@ GL::Texture2D<INTERNAL, FORMAT, TYPE>::Texture2D(
 
     if (GL_NO_ERROR != error)
     {
-        CGTK_REPORT((const char*)gluErrorString(error), CGTK_GL_ERROR);
+        CGTK_REPORT("Could not init texture", CGTK_GL_ERROR);
     }    
 }
 //------------------------------------------------------------------------------
