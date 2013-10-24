@@ -1,0 +1,2 @@
+PROJECT(Framework)
+ADD_SUBDIRECTORY(src)
