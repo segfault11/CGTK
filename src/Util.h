@@ -10,11 +10,13 @@
 ** Delete pointer only if it is not null. 
 */
 #define DELETE(x) if (x != NULL) {delete x; x = NULL;}
+#define CGTK_DELETE(x) if (x != NULL) {delete x; x = NULL;} // todo: remove 
 
 /*
 ** Delete pointer only if it is not null. 
 */
-#define DELETE_ARR(x) if (x != NULL) {delete x; x = NULL;}
+#define DELETE_ARR(x) if (x != NULL) {delete[] x; x = NULL;}
+#define CGTK_DELETE_ARR(x) if (x != NULL) {delete[] x; x = NULL;}
 
 /*
 ** Defines accessors to an member variable of a class. 

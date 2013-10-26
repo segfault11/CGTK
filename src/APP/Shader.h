@@ -109,7 +109,7 @@
     );
 
 //------------------------------------------------------------------------------
-    const char* FragmentShader = 
+const char* FragmentShader = 
     "#version 150\n"
     TO_STRING(
 

@@ -1,6 +1,7 @@
 # build and install the library
 FILE(GLOB_RECURSE files  RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp)
-add_library(CGTK STATIC ${files})
+FILE(GLOB_RECURSE cfiles  RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.c)
+add_library(CGTK STATIC ${files} ${cfiles})
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libCGTK.a DESTINATION lib)
 
 # install the headers

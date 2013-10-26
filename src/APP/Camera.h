@@ -68,8 +68,6 @@ namespace APP
 
         float data_[16];
         float perspectiveData_[16];
-    
-
     };
 }
  
