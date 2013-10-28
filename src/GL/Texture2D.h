@@ -30,6 +30,8 @@ namespace GL
         ** Binds the texture to a texture unit specified by [unit].
         */
         void Bind(int unit) const;
+
+        GLuint GetHandle() const {return texture_;}
     
 
     private:

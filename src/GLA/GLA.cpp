@@ -5,6 +5,7 @@
 #include "../Util.h"
 #include <iostream>
 
+
 // PUBLIC DEFININTIONS /////////////////////////////////////////////////////////
 
 
@@ -19,15 +20,11 @@ GLuint GLA::Texture2DCreateFromFile(const char *filename)
     // load the image
     int width, height, channels;
 
-    std::cout << "start loading image" << std::endl;
-
     unsigned char* data = SOIL_load_image(
         filename,
         &width, &height, &channels,
         SOIL_LOAD_AUTO
     );
-    
-    std::cout << "loaded succesful" << " width " << width << "height " << height << "channels " << channels <<  std::endl;
 
     if (data == NULL)
     {
@@ -43,11 +40,8 @@ GLuint GLA::Texture2DCreateFromFile(const char *filename)
     {
         return 0;
     }
-    std::cout << "GL_ERROR" << std::endl;
 
     glBindTexture(GL_TEXTURE_2D, handle);
-
-    std::cout << "GL_ERROR" << std::endl;
 
     for (int i = 0; i < width*height+5; ++i)
     {
@@ -61,8 +55,7 @@ GLuint GLA::Texture2DCreateFromFile(const char *filename)
             width, height, 0, 
             GL_RGB, GL_UNSIGNED_BYTE, data
         );
-        std::cout << "GL_ERROR" << std::endl;
-
+        
     }
     else if (channels == 4)
     {
@@ -71,8 +64,6 @@ GLuint GLA::Texture2DCreateFromFile(const char *filename)
             width, height, 0, 
             GL_RGBA, GL_UNSIGNED_BYTE, data
         );
-        std::cout << "GL_ERROR" << std::endl;
-
     }
     else
     {
@@ -89,6 +80,8 @@ GLuint GLA::Texture2DCreateFromFile(const char *filename)
 
 void GLA::Texture2DSaveAsBMP(const char* filename, GLuint handle)
 {
+    glGetError();
+
     if (filename == NULL)
     {
         CGTK_REPORT("Invalid file name", CGTK_INVALID_FILE);
@@ -147,7 +140,14 @@ void GLA::Texture2DSaveAsBMP(const char* filename, GLuint handle)
     unsigned char* data = NULL;
 
     switch (internalFormat)
-    {
+    {   
+        case GL_RED:
+        case GL_R8:
+            channels = 1;
+            data = new unsigned char[width*height*channels];
+            glGetTexImage(GL_TEXTURE_2D, 0, GL_RED, GL_UNSIGNED_BYTE, data);
+            break;
+        
         case GL_RGB:
         case GL_RGB8:
             channels = 3;
@@ -168,8 +168,6 @@ void GLA::Texture2DSaveAsBMP(const char* filename, GLuint handle)
                 CGTK_INVALID_TEXTURE
             )
             std::cout << internalFormat << std::endl;
-            std::cout << GL_RGB << std::endl;
-            std::cout << GL_RGBA << std::endl;
             return;
     }
    
@@ -185,6 +183,8 @@ void GLA::Texture2DSaveAsBMP(const char* filename, GLuint handle)
     {
         CGTK_REPORT("Failed saving the texture", CGTK_UNKNOWN_ERROR)
     }  
+
+    CGTK_ASSERT(GL_NO_ERROR == glGetError())
 
     // clean up
     CGTK_DELETE(data)

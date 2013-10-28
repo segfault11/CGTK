@@ -4,7 +4,9 @@
 #include <iostream>
 #include <cmath>
 #include "../GL/Program.h"
+#include "../GLA/GLA.h"
 #include "Application.h"
+#include "../External/SOIL/SOIL.h"
 
 APP::TextureAtlas::TextureAtlas(const std::string& font, unsigned int fontSize)
 {
@@ -38,7 +40,6 @@ APP::TextureAtlas::TextureAtlas(const std::string& font, unsigned int fontSize)
     int atlasWidth = 0;
     int atlasHeight = 0;
 
-    
     // compute the dimensions of the atlas
     for (unsigned int i = 32; i < 128; i++) 
     {
@@ -104,6 +105,8 @@ APP::TextureAtlas::TextureAtlas(const std::string& font, unsigned int fontSize)
 
     width_ = atlasWidth;
     height_ = atlasHeight;
+    SOIL_save_image("test.bmp", SOIL_SAVE_TYPE_BMP, atlasWidth, atlasHeight, 1, atlas);
+    GLA::Texture2DSaveAsBMP("atlas.bmp", atlas_->GetHandle());
 
 
     // clean up
