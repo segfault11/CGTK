@@ -7,7 +7,6 @@
 #ifndef SDLAPPLICATION_H__
 #define SDLAPPLICATION_H__
 
-#include <SDL2/SDL.h>
 #include "IEventHandler.h"
 #include "IDrawable.h"
 #include "Camera.h"
@@ -47,7 +46,6 @@ namespace APP
     Camera& GetCamera();
 
     void RegisterDrawable(IDrawable& drawable);
-    void RegisterGUIElement(IDrawable& drawable);
     void RegisterEventHandler(IEventHandler& eventHandler);
 
     unsigned int GetScreenWidth();

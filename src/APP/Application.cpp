@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include <GL/GLEW.h>
 #include <iostream>
+#include <SDL2/SDL.h>
 
 static bool initialized_ = false;
 static SDL_Window* window_ = NULL;
@@ -16,6 +17,10 @@ static APP::Camera camera_;
 
 static unsigned int screenWidth_;
 static unsigned int screenHeight_;
+
+
+// PUBLIC INTERFACE DEFINITIONS ////////////////////////////////////////////////
+
 
 void APP::Init(
     const char* name, 
@@ -184,12 +189,6 @@ void APP::Run()
 void APP::RegisterDrawable(IDrawable& drawable)
 {
     drawables_.push_back(&drawable);
-    objects_.push_back(&drawable);
-}
-
-void APP::RegisterGUIElement(IDrawable& drawable)
-{
-    guiElements_.push_back(&drawable);
     objects_.push_back(&drawable);
 }
 

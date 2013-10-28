@@ -29,4 +29,17 @@ namespace GLA
     ** does not end with ".bmp".
     */
     void Texture2DSaveAsBMP(const char* filename, GLuint handle);
+
+    /*!
+    ** Attaches a shader to the program. The shader is defined by the c string
+    ** [source] and is of type [type].
+    */
+    void ProgramAttachShaderFromSource(
+        GLuint program, GLenum type, const char* source
+    );
+
+    /*!
+    ** Links the program and detaches and deletes its attached shaders
+    */
+    void ProgramLink(GLuint program);
 }
