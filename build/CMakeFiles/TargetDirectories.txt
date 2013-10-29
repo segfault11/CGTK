@@ -1,1 +1,0 @@
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir
