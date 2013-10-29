@@ -80,6 +80,8 @@ void APP::Init(
     screenHeight_ = height;
 
     initialized_ = true;
+
+    glGetError();
 }
 
 void APP::Destroy()
