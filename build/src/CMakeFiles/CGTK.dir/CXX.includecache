@@ -8,7 +8,7 @@
 
 /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Error/Error.h
 
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLA/GLA.h
+/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLUE/GLUE.h
 GL/GLEW.h
 -
 
@@ -89,8 +89,8 @@ Label.h
 /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/Label.h
 ../Application.h
 /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../Application.h
-../../GLA/GLA.h
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLA/GLA.h
+../../GLUE/GLUE.h
+/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLUE/GLUE.h
 ../../Error/Error.h
 /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Error/Error.h
 ../../Util.h
@@ -99,4 +99,10 @@ Label.h
 /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector2.h
 
 /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/Label.h
+string
+-
+../IDrawable.h
+/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../IDrawable.h
+../../Math/Vector3.h
+/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector3.h
 

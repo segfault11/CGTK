@@ -337,34 +337,34 @@ External/SOIL/stb_image_aug.s:
 .PHONY : External/SOIL/stb_image_aug.s
 
 # target to build an object file
-GLA/Program.o:
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Program.o
-.PHONY : GLA/Program.o
+GLUE/Program.o:
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Program.o
+.PHONY : GLUE/Program.o
 
 # target to preprocess a source file
-GLA/Program.i:
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Program.i
-.PHONY : GLA/Program.i
+GLUE/Program.i:
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Program.i
+.PHONY : GLUE/Program.i
 
 # target to generate assembly for a file
-GLA/Program.s:
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Program.s
-.PHONY : GLA/Program.s
+GLUE/Program.s:
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Program.s
+.PHONY : GLUE/Program.s
 
 # target to build an object file
-GLA/Texture.o:
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Texture.o
-.PHONY : GLA/Texture.o
+GLUE/Texture.o:
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Texture.o
+.PHONY : GLUE/Texture.o
 
 # target to preprocess a source file
-GLA/Texture.i:
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Texture.i
-.PHONY : GLA/Texture.i
+GLUE/Texture.i:
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Texture.i
+.PHONY : GLUE/Texture.i
 
 # target to generate assembly for a file
-GLA/Texture.s:
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Texture.s
-.PHONY : GLA/Texture.s
+GLUE/Texture.s:
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build && $(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Texture.s
+.PHONY : GLUE/Texture.s
 
 # target to build an object file
 Obj/Object.o:
@@ -430,12 +430,12 @@ help:
 	@echo "... External/SOIL/stb_image_aug.o"
 	@echo "... External/SOIL/stb_image_aug.i"
 	@echo "... External/SOIL/stb_image_aug.s"
-	@echo "... GLA/Program.o"
-	@echo "... GLA/Program.i"
-	@echo "... GLA/Program.s"
-	@echo "... GLA/Texture.o"
-	@echo "... GLA/Texture.i"
-	@echo "... GLA/Texture.s"
+	@echo "... GLUE/Program.o"
+	@echo "... GLUE/Program.i"
+	@echo "... GLUE/Program.s"
+	@echo "... GLUE/Texture.o"
+	@echo "... GLUE/Texture.i"
+	@echo "... GLUE/Texture.s"
 	@echo "... Obj/Object.o"
 	@echo "... Obj/Object.i"
 	@echo "... Obj/Object.s"

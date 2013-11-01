@@ -190,51 +190,51 @@ src/CMakeFiles/CGTK.dir/Error/Error.o.provides: src/CMakeFiles/CGTK.dir/Error/Er
 
 src/CMakeFiles/CGTK.dir/Error/Error.o.provides.build: src/CMakeFiles/CGTK.dir/Error/Error.o
 
-src/CMakeFiles/CGTK.dir/GLA/Program.o: src/CMakeFiles/CGTK.dir/flags.make
-src/CMakeFiles/CGTK.dir/GLA/Program.o: ../src/GLA/Program.cpp
+src/CMakeFiles/CGTK.dir/GLUE/Program.o: src/CMakeFiles/CGTK.dir/flags.make
+src/CMakeFiles/CGTK.dir/GLUE/Program.o: ../src/GLUE/Program.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GLA/Program.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GLA/Program.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Program.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GLUE/Program.o"
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GLUE/Program.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Program.cpp
 
-src/CMakeFiles/CGTK.dir/GLA/Program.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GLA/Program.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Program.cpp > CMakeFiles/CGTK.dir/GLA/Program.i
+src/CMakeFiles/CGTK.dir/GLUE/Program.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GLUE/Program.i"
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Program.cpp > CMakeFiles/CGTK.dir/GLUE/Program.i
 
-src/CMakeFiles/CGTK.dir/GLA/Program.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GLA/Program.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Program.cpp -o CMakeFiles/CGTK.dir/GLA/Program.s
+src/CMakeFiles/CGTK.dir/GLUE/Program.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GLUE/Program.s"
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Program.cpp -o CMakeFiles/CGTK.dir/GLUE/Program.s
 
-src/CMakeFiles/CGTK.dir/GLA/Program.o.requires:
-.PHONY : src/CMakeFiles/CGTK.dir/GLA/Program.o.requires
+src/CMakeFiles/CGTK.dir/GLUE/Program.o.requires:
+.PHONY : src/CMakeFiles/CGTK.dir/GLUE/Program.o.requires
 
-src/CMakeFiles/CGTK.dir/GLA/Program.o.provides: src/CMakeFiles/CGTK.dir/GLA/Program.o.requires
-	$(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Program.o.provides.build
-.PHONY : src/CMakeFiles/CGTK.dir/GLA/Program.o.provides
+src/CMakeFiles/CGTK.dir/GLUE/Program.o.provides: src/CMakeFiles/CGTK.dir/GLUE/Program.o.requires
+	$(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Program.o.provides.build
+.PHONY : src/CMakeFiles/CGTK.dir/GLUE/Program.o.provides
 
-src/CMakeFiles/CGTK.dir/GLA/Program.o.provides.build: src/CMakeFiles/CGTK.dir/GLA/Program.o
+src/CMakeFiles/CGTK.dir/GLUE/Program.o.provides.build: src/CMakeFiles/CGTK.dir/GLUE/Program.o
 
-src/CMakeFiles/CGTK.dir/GLA/Texture.o: src/CMakeFiles/CGTK.dir/flags.make
-src/CMakeFiles/CGTK.dir/GLA/Texture.o: ../src/GLA/Texture.cpp
+src/CMakeFiles/CGTK.dir/GLUE/Texture.o: src/CMakeFiles/CGTK.dir/flags.make
+src/CMakeFiles/CGTK.dir/GLUE/Texture.o: ../src/GLUE/Texture.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GLA/Texture.o"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GLA/Texture.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/CGTK.dir/GLUE/Texture.o"
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/CGTK.dir/GLUE/Texture.o -c /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.cpp
 
-src/CMakeFiles/CGTK.dir/GLA/Texture.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GLA/Texture.i"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Texture.cpp > CMakeFiles/CGTK.dir/GLA/Texture.i
+src/CMakeFiles/CGTK.dir/GLUE/Texture.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGTK.dir/GLUE/Texture.i"
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.cpp > CMakeFiles/CGTK.dir/GLUE/Texture.i
 
-src/CMakeFiles/CGTK.dir/GLA/Texture.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GLA/Texture.s"
-	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Texture.cpp -o CMakeFiles/CGTK.dir/GLA/Texture.s
+src/CMakeFiles/CGTK.dir/GLUE/Texture.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGTK.dir/GLUE/Texture.s"
+	cd /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.cpp -o CMakeFiles/CGTK.dir/GLUE/Texture.s
 
-src/CMakeFiles/CGTK.dir/GLA/Texture.o.requires:
-.PHONY : src/CMakeFiles/CGTK.dir/GLA/Texture.o.requires
+src/CMakeFiles/CGTK.dir/GLUE/Texture.o.requires:
+.PHONY : src/CMakeFiles/CGTK.dir/GLUE/Texture.o.requires
 
-src/CMakeFiles/CGTK.dir/GLA/Texture.o.provides: src/CMakeFiles/CGTK.dir/GLA/Texture.o.requires
-	$(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLA/Texture.o.provides.build
-.PHONY : src/CMakeFiles/CGTK.dir/GLA/Texture.o.provides
+src/CMakeFiles/CGTK.dir/GLUE/Texture.o.provides: src/CMakeFiles/CGTK.dir/GLUE/Texture.o.requires
+	$(MAKE) -f src/CMakeFiles/CGTK.dir/build.make src/CMakeFiles/CGTK.dir/GLUE/Texture.o.provides.build
+.PHONY : src/CMakeFiles/CGTK.dir/GLUE/Texture.o.provides
 
-src/CMakeFiles/CGTK.dir/GLA/Texture.o.provides.build: src/CMakeFiles/CGTK.dir/GLA/Texture.o
+src/CMakeFiles/CGTK.dir/GLUE/Texture.o.provides.build: src/CMakeFiles/CGTK.dir/GLUE/Texture.o
 
 src/CMakeFiles/CGTK.dir/Obj/Object.o: src/CMakeFiles/CGTK.dir/flags.make
 src/CMakeFiles/CGTK.dir/Obj/Object.o: ../src/Obj/Object.cpp
@@ -405,8 +405,8 @@ CGTK_OBJECTS = \
 "CMakeFiles/CGTK.dir/APP/IObject.o" \
 "CMakeFiles/CGTK.dir/APP/UI/Label.o" \
 "CMakeFiles/CGTK.dir/Error/Error.o" \
-"CMakeFiles/CGTK.dir/GLA/Program.o" \
-"CMakeFiles/CGTK.dir/GLA/Texture.o" \
+"CMakeFiles/CGTK.dir/GLUE/Program.o" \
+"CMakeFiles/CGTK.dir/GLUE/Texture.o" \
 "CMakeFiles/CGTK.dir/Obj/Object.o" \
 "CMakeFiles/CGTK.dir/External/SOIL/image_DXT.o" \
 "CMakeFiles/CGTK.dir/External/SOIL/image_helper.o" \
@@ -424,8 +424,8 @@ src/libCGTK.a: src/CMakeFiles/CGTK.dir/APP/IEventHandler.o
 src/libCGTK.a: src/CMakeFiles/CGTK.dir/APP/IObject.o
 src/libCGTK.a: src/CMakeFiles/CGTK.dir/APP/UI/Label.o
 src/libCGTK.a: src/CMakeFiles/CGTK.dir/Error/Error.o
-src/libCGTK.a: src/CMakeFiles/CGTK.dir/GLA/Program.o
-src/libCGTK.a: src/CMakeFiles/CGTK.dir/GLA/Texture.o
+src/libCGTK.a: src/CMakeFiles/CGTK.dir/GLUE/Program.o
+src/libCGTK.a: src/CMakeFiles/CGTK.dir/GLUE/Texture.o
 src/libCGTK.a: src/CMakeFiles/CGTK.dir/Obj/Object.o
 src/libCGTK.a: src/CMakeFiles/CGTK.dir/External/SOIL/image_DXT.o
 src/libCGTK.a: src/CMakeFiles/CGTK.dir/External/SOIL/image_helper.o
@@ -449,8 +449,8 @@ src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/APP/IEventHandler.o.re
 src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/APP/IObject.o.requires
 src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/APP/UI/Label.o.requires
 src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/Error/Error.o.requires
-src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/GLA/Program.o.requires
-src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/GLA/Texture.o.requires
+src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/GLUE/Program.o.requires
+src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/GLUE/Texture.o.requires
 src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/Obj/Object.o.requires
 src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/External/SOIL/image_DXT.o.requires
 src/CMakeFiles/CGTK.dir/requires: src/CMakeFiles/CGTK.dir/External/SOIL/image_helper.o.requires

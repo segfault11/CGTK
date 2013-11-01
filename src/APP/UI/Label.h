@@ -2,7 +2,9 @@
 #define LABEL_H__
 
 #include <string>
+#include "../IDrawable.h"
 #include "../../Math/Vector3.h"
+#include "../../Math/Vector2.h"
 
 namespace APP
 {
@@ -13,7 +15,7 @@ namespace APP
         */
         struct Font;
         typedef const Font* FontPtr;
-
+    
         /*!
         ** Creates a font. Takes the filename and the size of the font as
         ** arguments. 
@@ -27,11 +29,12 @@ namespace APP
         */
         void FontDestroy(FontPtr* font);
 
-        class Label
+        class Label : public APP::IDrawable
         {
         public:
             
             Label(
+                const Math::Vector2I& pos,
                 const std::string& text, 
                 FontPtr font, 
                 const Math::Vector3F& fontCol, 

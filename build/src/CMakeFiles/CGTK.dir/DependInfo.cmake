@@ -20,8 +20,8 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/APP/IObject.o"
   "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/Label.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/APP/UI/Label.o"
   "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/Error/Error.o"
-  "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Program.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/GLA/Program.o"
-  "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Texture.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/GLA/Texture.o"
+  "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Program.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/GLUE/Program.o"
+  "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/GLUE/Texture.o"
   "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/Object.cpp" "/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/build/src/CMakeFiles/CGTK.dir/Obj/Object.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")

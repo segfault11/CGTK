@@ -51,7 +51,7 @@ src/CMakeFiles/CGTK.dir/APP/IObject.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Error/Error.h
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLA/GLA.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLUE/GLUE.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/../Error/Error.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Tuple.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Tuple.inl
@@ -70,16 +70,14 @@ src/CMakeFiles/CGTK.dir/APP/UI/Label.o
 src/CMakeFiles/CGTK.dir/Error/Error.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.cpp
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Error/Error.h
-src/CMakeFiles/CGTK.dir/GLA/Program.o
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/../Error/Error.h
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/GLA.h
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Program.cpp
-src/CMakeFiles/CGTK.dir/GLA/Texture.o
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/../Error/Error.h
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/../External/SOIL/SOIL.h
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/../Util.h
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/GLA.h
- /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLA/Texture.cpp
+src/CMakeFiles/CGTK.dir/GLUE/Program.o
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../Error/Error.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Program.cpp
+src/CMakeFiles/CGTK.dir/GLUE/Texture.o
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../Error/Error.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../External/SOIL/SOIL.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../Util.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.cpp
 src/CMakeFiles/CGTK.dir/Obj/Object.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/../Math/../Error/Error.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/Obj/../Math/Tuple.h
