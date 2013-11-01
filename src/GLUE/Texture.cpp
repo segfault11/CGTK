@@ -1,4 +1,4 @@
-#include "GLUE.h"
+#include "Texture.h"
 #include <cstring>
 #include "../Error/Error.h"
 #include "../External/SOIL/SOIL.h"

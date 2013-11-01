@@ -6,7 +6,8 @@
 /usr/include/CGTK/APP/IObject.h
 /usr/include/CGTK/APP/UI/Label.h
 /usr/include/CGTK/Error/Error.h
-/usr/include/CGTK/GLA/GLA.h
+/usr/include/CGTK/GLUE/Program.h
+/usr/include/CGTK/GLUE/Texture.h
 /usr/include/CGTK/Math/Matrix4.h
 /usr/include/CGTK/Math/Tuple.h
 /usr/include/CGTK/Math/Vector2.h

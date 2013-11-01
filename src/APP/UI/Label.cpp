@@ -3,7 +3,8 @@
 #include FT_FREETYPE_H
 #include "Label.h"
 #include "../Application.h"
-#include "../../GLUE/GLUE.h"
+#include "../../GLUE/Program.h"
+#include "../../GLUE/Texture.h"
 #include "../../Error/Error.h"
 #include "../../Util.h"
 #include "../../Math/Vector2.h"

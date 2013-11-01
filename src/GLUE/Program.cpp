@@ -1,6 +1,38 @@
 #include <sstream>
-#include "GLUE.h"
+#include "Program.h"
 #include "../Error/Error.h"
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <cerrno>
+
+// FILE PRIVATE DEFINITIONS ////////////////////////////////////////////////////
+
+bool getFileContents(std::string& contents, const char *filename)
+{
+    std::ifstream in(filename, std::ios::in);
+    
+    if (!in.is_open())
+    {
+        return false;
+    }
+
+    in.seekg(0, std::ios::end);
+    contents.reserve(in.tellg());
+    in.seekg(0, std::ios::beg);
+
+    contents.assign(
+        std::istreambuf_iterator<char>(in), 
+        std::istreambuf_iterator<char>()
+    );
+
+    in.close();
+
+    return true;
+}
+
+
+// PUBLIC INTERFACE DEFINITION /////////////////////////////////////////////////
 
 
 void GLUE::ProgramAttachShaderFromSource(
@@ -45,6 +77,27 @@ void GLUE::ProgramAttachShaderFromSource(
     }    
 
     glAttachShader(program, shader);
+}
+
+void GLUE::ProgramAttachShaderFromFile(
+    GLuint program, 
+    GLenum type, 
+    const char *filename
+)
+{
+    std::string contents;
+
+    if (!getFileContents(contents, filename))
+    {
+        CGTK_REPORT("Could not open file", CGTK_INVALID_FILE);
+        return;
+    }
+
+    GLUE::ProgramAttachShaderFromSource(
+        program, 
+        type, 
+        contents.c_str()
+    );
 }
 
 void GLUE::ProgramLink(GLuint program)

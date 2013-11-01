@@ -50,7 +50,8 @@ src/CMakeFiles/CGTK.dir/APP/IObject.o: ../src/APP/IObject.cpp
 src/CMakeFiles/CGTK.dir/APP/IObject.o: ../src/APP/IObject.h
 
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Error/Error.h
-src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../GLUE/GLUE.h
+src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../GLUE/Program.h
+src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../GLUE/Texture.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/../Error/Error.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Tuple.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Tuple.inl
@@ -72,11 +73,13 @@ src/CMakeFiles/CGTK.dir/Error/Error.o: ../src/Error/Error.h
 
 src/CMakeFiles/CGTK.dir/GLUE/Program.o: ../src/GLUE/../Error/Error.h
 src/CMakeFiles/CGTK.dir/GLUE/Program.o: ../src/GLUE/Program.cpp
+src/CMakeFiles/CGTK.dir/GLUE/Program.o: ../src/GLUE/Program.h
 
 src/CMakeFiles/CGTK.dir/GLUE/Texture.o: ../src/GLUE/../Error/Error.h
 src/CMakeFiles/CGTK.dir/GLUE/Texture.o: ../src/GLUE/../External/SOIL/SOIL.h
 src/CMakeFiles/CGTK.dir/GLUE/Texture.o: ../src/GLUE/../Util.h
 src/CMakeFiles/CGTK.dir/GLUE/Texture.o: ../src/GLUE/Texture.cpp
+src/CMakeFiles/CGTK.dir/GLUE/Texture.o: ../src/GLUE/Texture.h
 
 src/CMakeFiles/CGTK.dir/Obj/Object.o: ../src/Obj/../Math/../Error/Error.h
 src/CMakeFiles/CGTK.dir/Obj/Object.o: ../src/Obj/../Math/Tuple.h
