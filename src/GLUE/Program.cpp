@@ -1,6 +1,7 @@
 #include <sstream>
 #include "Program.h"
 #include "../Error/Error.h"
+#include <iostream>
 #include <fstream>
 #include <streambuf>
 #include <string>
@@ -33,8 +34,7 @@ bool getFileContents(std::string& contents, const char *filename)
 
 
 // PUBLIC INTERFACE DEFINITION /////////////////////////////////////////////////
-
-
+//------------------------------------------------------------------------------
 void GLUE::ProgramAttachShaderFromSource(
     GLuint program, 
     GLenum type, 
@@ -78,7 +78,7 @@ void GLUE::ProgramAttachShaderFromSource(
 
     glAttachShader(program, shader);
 }
-
+//------------------------------------------------------------------------------
 void GLUE::ProgramAttachShaderFromFile(
     GLuint program, 
     GLenum type, 
@@ -99,7 +99,7 @@ void GLUE::ProgramAttachShaderFromFile(
         contents.c_str()
     );
 }
-
+//------------------------------------------------------------------------------
 void GLUE::ProgramLink(GLuint program)
 {
     glLinkProgram(program);
@@ -132,3 +132,16 @@ void GLUE::ProgramLink(GLuint program)
     
     delete[] shaders;
 }
+//------------------------------------------------------------------------------
+void GLUE::UniformMatrix4F(
+    GLuint program,
+    const char* name, 
+    const GLfloat* value, 
+    GLboolean transpose
+)
+{
+    GLint loc = glGetUniformLocation(program, name);
+    CGTK_ASSERT(loc != -1)
+    glUniformMatrix4fv(loc, 1, transpose, value);
+}
+//------------------------------------------------------------------------------

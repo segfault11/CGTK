@@ -7,6 +7,7 @@
 #define CAMERA_H__
 
 #include "../Math/Vector3.h"
+#include "../Math/Matrix4.h"
 #include <string>
 #include <list>
 
@@ -62,9 +63,11 @@ namespace APP
 
         Math::Vector3F eye_;
         Math::Vector3F u_, v_, n_;
-        
+
         float fovy_, aspect_, near_, far_;
         
+
+        Math::Matrix4F perspective;
 
         float data_[16];
         float perspectiveData_[16];

@@ -25,6 +25,18 @@ namespace GLUE
     ** Links the program and detaches and deletes its attached shaders
     */
     void ProgramLink(GLuint program);
+
+    /*!
+    ** Sets a uniform Mat4 variable identified by [name] in the glsl object.
+    ** NOTE: THE GLSL OBJECT SHOULD BE BOUND BEFORE USING THIS FUNCTION.
+    */
+    void UniformMatrix4F(
+        GLuint program,
+        const char* name, 
+        const GLfloat* value, 
+        GLboolean transpose
+    );
+
 }
  
 #endif /* end of include guard: PROGRAM_H__ */

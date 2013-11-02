@@ -7,6 +7,7 @@
 #define MATRIX4_H__
  
 #include "Vector4.h"
+#include "Vector3.h"
 #include <string>
 
 namespace Math
@@ -32,6 +33,41 @@ namespace Math
         ** Gets the raw data in form of a linear array with 16 elements.
         */
         const T* GetData() const;
+
+        /*!
+        **  Turns the matrix to an OpenGL perspective matrix. NOTE THAT THE 
+        **  MATRIX IS STILL ROW MAJOR AND NEEDS TO BE TRANSPOSED WHEN BEING 
+        **  PASSED TO OPENGL.
+        */
+        void MakePerspective(
+            const T& l, const T& r, 
+            const T& b, const T& t, 
+            const T& n, const T& f
+        );
+
+        void MakePerspective(
+            const T& fovy, 
+            const T& aspect, 
+            const T& near,
+            const T& far
+        );
+
+        /*!
+        **  Turns the matrix to an OpenGL view matrix.NOTE THAT THE 
+        **  MATRIX IS STILL ROW MAJOR AND NEEDS TO BE TRANSPOSED WHEN BEING 
+        **  PASSED TO OPENGL.
+        **
+        **  @param eye The position of the camera.
+        **  @param f The point the camera focuses on.
+        **  @param up The orientation of the camera.
+        */
+        void MakeView(    
+            const Math::Vector3<T>& eye, 
+            const Math::Vector3<T>& f,
+            const Math::Vector3<T>& up
+        );
+
+        void MakeIdentity();
 
     private:    
         Vector4<Vector4<T> > data_;

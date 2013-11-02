@@ -30,7 +30,7 @@ Vector4<T>& Vector4<T>::operator=(const T& a)
 template<typename T>
 T& Vector4<T>::operator[](unsigned int i)
 {
-    ERROR_ASSERT(i < 4)
+    CGTK_ASSERT(i < 4)
 
     return data_[i];
 }
@@ -38,7 +38,7 @@ T& Vector4<T>::operator[](unsigned int i)
 template<typename T>
 const T& Vector4<T>::operator[](unsigned int i) const
 {
-    ERROR_ASSERT(i < 4)
+    CGTK_ASSERT(i < 4)
     
     return data_[i];
 }
