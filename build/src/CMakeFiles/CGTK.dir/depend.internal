@@ -24,10 +24,14 @@ src/CMakeFiles/CGTK.dir/External/SOIL/stb_image_aug.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/External/SOIL/stbi_DDS_aug_c.h
 src/CMakeFiles/CGTK.dir/APP/Application.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Error/Error.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Matrix4.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Matrix4.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Tuple.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Tuple.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector3.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector3.inl
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector4.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector4.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.cpp
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Application.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.h
@@ -36,10 +40,14 @@ src/CMakeFiles/CGTK.dir/APP/Application.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/IObject.h
 src/CMakeFiles/CGTK.dir/APP/Camera.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/../Error/Error.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Matrix4.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Matrix4.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Tuple.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Tuple.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector3.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector3.inl
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector4.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/../Math/Vector4.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.cpp
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/Camera.h
 src/CMakeFiles/CGTK.dir/APP/IEventHandler.o
@@ -54,12 +62,16 @@ src/CMakeFiles/CGTK.dir/APP/UI/Label.o
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLUE/Program.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../GLUE/Texture.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/../Error/Error.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Matrix4.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Matrix4.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Tuple.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Tuple.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector2.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector2.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector3.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector3.inl
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector4.h
+ /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector4.inl
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Util.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../Application.h
  /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../Camera.h

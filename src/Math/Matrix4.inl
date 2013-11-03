@@ -10,7 +10,7 @@ template<typename T>
 void Math::Matrix4<T>::Transpose()
 {
     unsigned int k = 1;
-    for (unsigned int i = 1; i < 4; i++)
+    for (unsigned int i = 0; i < 4; i++)
     {
         for (unsigned int j = k; j < 4; j++)
         {
@@ -82,9 +82,10 @@ void Math::Matrix4<T>::MakeView(
     const Math::Vector3<T>& up
 )
 {
+    
     Math::Vector3<T> n = eye - f;
     n.Normalize();
-
+    
     Math::Vector3<T> u = up.Cross(n);
     u.Normalize();
 
@@ -132,5 +133,30 @@ void Math::Matrix4<T>::MakeIdentity()
             }
         }
     }
+}
+//------------------------------------------------------------------------------
+template<typename T>
+void Math::Matrix4<T>::MakeZero()
+{
+    for (unsigned int i = 0; i < 4; i++)
+    {
+        for (unsigned int j = 0; j < 4; j++)
+        {
+            data_[i][j] = static_cast<T>(0);
+        }
+    }
+}
+//------------------------------------------------------------------------------
+template<typename T>
+void Math::Matrix4<T>::MakeRotationY(const T& angle)
+{
+    this->MakeZero();
+
+    (*this)[0][0] = std::cos(angle);
+    (*this)[0][2] = std::sin(angle);
+    (*this)[1][1] = static_cast<T>(1);
+    (*this)[2][0] = -std::sin(angle);
+    (*this)[2][2] = std::cos(angle);    
+    (*this)[3][3] = static_cast<T>(1);
 }
 //------------------------------------------------------------------------------

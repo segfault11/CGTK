@@ -18,10 +18,11 @@ static APP::Camera camera_;
 static unsigned int screenWidth_;
 static unsigned int screenHeight_;
 
-
+////////////////////////////////////////////////////////////////////////////////
 // PUBLIC INTERFACE DEFINITIONS ////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
-
+//------------------------------------------------------------------------------
 void APP::Init(
     const char* name, 
     unsigned int x, 
@@ -83,7 +84,7 @@ void APP::Init(
 
     glGetError();
 }
-
+//------------------------------------------------------------------------------
 void APP::Destroy()
 {
     if (!initialized_)
@@ -97,7 +98,7 @@ void APP::Destroy()
 
     initialized_ = false;
 }
-
+//------------------------------------------------------------------------------
 void APP::Run() 
 {
     if (!initialized_)
@@ -110,6 +111,7 @@ void APP::Run()
 
     Uint32 currTime = SDL_GetTicks();
 
+    // event handling
     while (!done) 
     {
         // compute the time
@@ -127,7 +129,6 @@ void APP::Run()
             {
                 (*start)->OnEvent(event);
             }
-
 
             if (event.type == SDL_QUIT || event.type == SDL_QUIT)
             {
@@ -151,6 +152,10 @@ void APP::Run()
 
 
         //  draw gui renderer
+        glEnable(GL_DEPTH_TEST);
+        // glDepthMask(GL_TRUE);
+        // glDepthFunc(GL_LEQUAL);
+        // glDepthRange(0.0f, 1.0f);
         {
             glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -169,7 +174,7 @@ void APP::Run()
         //  draw gui renderer
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         {        
             std::list<IDrawable*>::iterator start = guiElements_.begin();
             std::list<IDrawable*>::iterator end = guiElements_.end();
@@ -187,45 +192,46 @@ void APP::Run()
     }
     
 }
-
+//------------------------------------------------------------------------------
 void APP::RegisterDrawable(IDrawable& drawable)
 {
     drawables_.push_back(&drawable);
     objects_.push_back(&drawable);
 }
-
+//------------------------------------------------------------------------------
 void APP::RegisterEventHandler(IEventHandler& eventHandler)
 {
     eventHandlers_.push_back(&eventHandler);
     objects_.push_back(&eventHandler);
 }
-
+//------------------------------------------------------------------------------
 bool APP::IsInitialized()
 {
     return initialized_;
 }
-
+//------------------------------------------------------------------------------
 float APP::GetDeltaTime() 
 {
     return elapsed_;
 }
-
+//------------------------------------------------------------------------------
 unsigned int APP::GetScreenWidth()
 {
     return screenWidth_;
 }
-
+//------------------------------------------------------------------------------
 unsigned int APP::GetScreenHeight()
 {
     return screenHeight_;
 }
-
+//------------------------------------------------------------------------------
 void APP::SetCamera(const Camera& camera)
 {
     camera_ = camera;
 }
-
+//------------------------------------------------------------------------------
 APP::Camera& APP::GetCamera()
 {
     return camera_;
 }
+//------------------------------------------------------------------------------

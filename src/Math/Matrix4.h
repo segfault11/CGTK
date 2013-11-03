@@ -39,13 +39,13 @@ namespace Math
         **  MATRIX IS STILL ROW MAJOR AND NEEDS TO BE TRANSPOSED WHEN BEING 
         **  PASSED TO OPENGL.
         */
-        void MakePerspective(
+        inline void MakePerspective(
             const T& l, const T& r, 
             const T& b, const T& t, 
             const T& n, const T& f
         );
 
-        void MakePerspective(
+        inline void MakePerspective(
             const T& fovy, 
             const T& aspect, 
             const T& near,
@@ -61,13 +61,21 @@ namespace Math
         **  @param f The point the camera focuses on.
         **  @param up The orientation of the camera.
         */
-        void MakeView(    
+        inline void MakeView(    
             const Math::Vector3<T>& eye, 
             const Math::Vector3<T>& f,
             const Math::Vector3<T>& up
         );
 
-        void MakeIdentity();
+        /*!
+        **  Turns the matrix to an OpenGL rotation matrix for the y axis. NOTE 
+        **  THAT THE MATRIX IS STILL ROW MAJOR AND NEEDS TO BE TRANSPOSED WHEN 
+        **  BEING PASSED TO OPENGL.
+        */
+        inline void MakeRotationY(const T& angle);
+
+        inline void MakeZero();
+        inline void MakeIdentity();
 
     private:    
         Vector4<Vector4<T> > data_;

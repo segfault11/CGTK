@@ -23,10 +23,14 @@ src/CMakeFiles/CGTK.dir/External/SOIL/stb_image_aug.o: ../src/External/SOIL/stbi
 src/CMakeFiles/CGTK.dir/External/SOIL/stb_image_aug.o: ../src/External/SOIL/stbi_DDS_aug_c.h
 
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Error/Error.h
+src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Matrix4.h
+src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Matrix4.inl
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Tuple.h
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Tuple.inl
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Vector3.h
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Vector3.inl
+src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Vector4.h
+src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/../Math/Vector4.inl
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/Application.cpp
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/Application.h
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/Camera.h
@@ -35,10 +39,14 @@ src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/IEventHandler.h
 src/CMakeFiles/CGTK.dir/APP/Application.o: ../src/APP/IObject.h
 
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/../Error/Error.h
+src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Matrix4.h
+src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Matrix4.inl
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Tuple.h
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Tuple.inl
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Vector3.h
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Vector3.inl
+src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Vector4.h
+src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/../Math/Vector4.inl
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/Camera.cpp
 src/CMakeFiles/CGTK.dir/APP/Camera.o: ../src/APP/Camera.h
 
@@ -53,12 +61,16 @@ src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Error/Error.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../GLUE/Program.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../GLUE/Texture.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/../Error/Error.h
+src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Matrix4.h
+src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Matrix4.inl
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Tuple.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Tuple.inl
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Vector2.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Vector2.inl
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Vector3.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Vector3.inl
+src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Vector4.h
+src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Math/Vector4.inl
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../../Util.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../Application.h
 src/CMakeFiles/CGTK.dir/APP/UI/Label.o: ../src/APP/UI/../Camera.h
