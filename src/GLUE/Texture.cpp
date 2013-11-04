@@ -1,18 +1,17 @@
+//------------------------------------------------------------------------------
 #include "Texture.h"
 #include <cstring>
 #include "../Error/Error.h"
 #include "../External/SOIL/SOIL.h"
 #include "../Util.h"
 #include <iostream>
-
-
-// PUBLIC DEFININTIONS /////////////////////////////////////////////////////////
-
-
+//------------------------------------------------------------------------------
+// PUBLIC DEFININTIONS 
+//------------------------------------------------------------------------------
 GLuint GLUE::Texture2DCreateFromFile(const char *filename)
 {
-    if (filename == NULL)
-    {
+    if (filename == NULL)                                                        // TODO: Bind the previous bound tex 
+    {                                                                            //       after tex is created.
         CGTK_REPORT("Invalid file name", CGTK_INVALID_FILE);
         return 0;
     }
@@ -38,15 +37,11 @@ GLuint GLUE::Texture2DCreateFromFile(const char *filename)
 
     if (handle == 0)
     {
+        CGTK_REPORT("Texture could not be created.", CGTK_INVALID_FILE);
         return 0;
     }
 
     glBindTexture(GL_TEXTURE_2D, handle);
-
-    for (int i = 0; i < width*height+5; ++i)
-    {
-        //std::cout << "bla " << int(data[i]) << std::endl;
-    }
 
     if (channels == 3)
     {
@@ -75,9 +70,23 @@ GLuint GLUE::Texture2DCreateFromFile(const char *filename)
     // clean up
     SOIL_free_image_data(data);
 
+    CGTK_ASSERT(GL_NO_ERROR == glGetError())
+
+    if (GL_NO_ERROR != glGetError())
+    {
+        glDeleteTextures(1, &handle);
+        return 0;
+    }
+
+    // give the tex a default config
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+
     return handle;
 }
-
+//------------------------------------------------------------------------------
 void GLUE::Texture2DSaveAsBMP(const char* filename, GLuint handle)
 {
     glGetError();
@@ -189,3 +198,4 @@ void GLUE::Texture2DSaveAsBMP(const char* filename, GLuint handle)
     // clean up
     CGTK_DELETE(data)
 }
+//------------------------------------------------------------------------------

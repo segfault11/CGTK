@@ -30,11 +30,21 @@ namespace GLUE
     ** Sets a uniform Mat4 variable identified by [name] in the glsl object.
     ** NOTE: THE GLSL OBJECT SHOULD BE BOUND BEFORE USING THIS FUNCTION.
     */
-    void UniformMatrix4F(
+    void ProgramUniformMatrix4F(
         GLuint program,
         const char* name, 
         const GLfloat* value, 
         GLboolean transpose
+    );
+
+    /*!
+    ** Sets a uniform int variable identified by [name] in the glsl object.
+    ** NOTE: THE GLSL OBJECT SHOULD BE BOUND BEFORE USING THIS FUNCTION.
+    */
+    void ProgramUniform1I(
+        GLuint program,
+        const char* name, 
+        GLint value
     );
 
 }

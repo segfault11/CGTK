@@ -93,7 +93,7 @@ Obj::File* Obj::Load(
     return objFile;
 }
 //------------------------------------------------------------------------------
-void Obj::Release(const Obj::File** file)
+void Obj::Release(Obj::File** file)
 {
     delete *file;
     *file = NULL;
@@ -509,11 +509,13 @@ static bool readMaterialFile(Obj::File& file, std::string& line)
 //------------------------------------------------------------------------------
 void processMatLine(Obj::File& file, unsigned int lineNo, std::string& line)
 {
+    // READS IN ONE LINE [line] FROM AN [.mtl] FILE
+
     // TODO: trim string
 
     if (line.find("newmtl") == 0)
     {
-        // push back an empty material to the file
+        // push back an empty material to the [file]
         char matName[MAX_NAME_LENGTH];
 
         if (1 != std::sscanf(line.c_str(), "newmtl %s", matName))
@@ -620,6 +622,45 @@ void processMatLine(Obj::File& file, unsigned int lineNo, std::string& line)
 
         file.Materials[cmi].Specular = specular;
         return;
+    }
+
+    if (line.find("map_Ka") == 0)
+    {
+        char mapName[MAX_NAME_LENGTH];
+
+        if (1 != std::sscanf(line.c_str(), "map_Ka %s", mapName))
+        {
+            reportError(filenameMat_, lineNo, line);
+        }
+
+        file.Materials[cmi].AmbientTexture = std::string(mapName);
+        return;
+    }
+
+    if (line.find("map_Kd") == 0)
+    {
+        char mapName[MAX_NAME_LENGTH];
+
+        if (1 != std::sscanf(line.c_str(), "map_Kd %s", mapName))
+        {
+            reportError(filenameMat_, lineNo, line);
+        }
+
+        file.Materials[cmi].DiffuseTexture = std::string(mapName);
+        return;        
+    }
+
+    if (line.find("map_Ks") == 0)
+    {
+        char mapName[MAX_NAME_LENGTH];
+
+        if (1 != std::sscanf(line.c_str(), "map_Ks %s", mapName))
+        {
+            reportError(filenameMat_, lineNo, line);
+        }
+
+        file.Materials[cmi].SpecularTexture = std::string(mapName);
+        return;            
     }
 }
 //------------------------------------------------------------------------------

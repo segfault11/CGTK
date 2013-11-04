@@ -1,3 +1,4 @@
+//------------------------------------------------------------------------------
 #include <sstream>
 #include "Program.h"
 #include "../Error/Error.h"
@@ -6,9 +7,7 @@
 #include <streambuf>
 #include <string>
 #include <cerrno>
-
-// FILE PRIVATE DEFINITIONS ////////////////////////////////////////////////////
-
+//------------------------------------------------------------------------------ // FILE PRIVATE DEFINITIONS 
 bool getFileContents(std::string& contents, const char *filename)
 {
     std::ifstream in(filename, std::ios::in);
@@ -31,10 +30,7 @@ bool getFileContents(std::string& contents, const char *filename)
 
     return true;
 }
-
-
-// PUBLIC INTERFACE DEFINITION /////////////////////////////////////////////////
-//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------  // PUBLIC DEFINITIONS 
 void GLUE::ProgramAttachShaderFromSource(
     GLuint program, 
     GLenum type, 
@@ -133,7 +129,7 @@ void GLUE::ProgramLink(GLuint program)
     delete[] shaders;
 }
 //------------------------------------------------------------------------------
-void GLUE::UniformMatrix4F(
+void GLUE::ProgramUniformMatrix4F(
     GLuint program,
     const char* name, 
     const GLfloat* value, 
@@ -143,5 +139,16 @@ void GLUE::UniformMatrix4F(
     GLint loc = glGetUniformLocation(program, name);
     CGTK_ASSERT(loc != -1)
     glUniformMatrix4fv(loc, 1, transpose, value);
+}
+//------------------------------------------------------------------------------
+void GLUE::ProgramUniform1I(
+    GLuint program,
+    const char* name, 
+    GLint value
+)
+{
+    GLint loc = glGetUniformLocation(program, name);
+    CGTK_ASSERT(loc != -1)
+    glUniform1i(loc, value);
 }
 //------------------------------------------------------------------------------

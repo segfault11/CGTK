@@ -15,7 +15,7 @@
 /*
     TODO's:
         - For Materials
-            - read textures (ambient, diffuse, specular, bump)
+            - read textures (bump)
             - read emission and transmission
         - Specify what materials should be supported
         - Triangulate Quads if they appear in the obj file.
@@ -45,7 +45,10 @@ namespace Obj
             Diffuse(Math::Vector3F(0.0f, 0.0f, 0.0f)),
             Specular(Math::Vector3F(0.0f, 0.0f, 0.0f)),
             Shininess(1.0f),
-            Refraction(0.0f)
+            Refraction(0.0f),
+            AmbientTexture(""),
+            DiffuseTexture(""),
+            SpecularTexture("")
         {
 
         }
@@ -59,6 +62,9 @@ namespace Obj
             s << "Specular Reflection: " << Specular.ToString() << std::endl;
             s << "Shininess:  " << Shininess << std::endl;
             s << "Refraction: " << Refraction << std::endl;
+            s << "AmbientTexture: " << AmbientTexture << std::endl;
+            s << "DiffuseTexture: " << DiffuseTexture << std::endl;
+            s << "SpecularTexture: " << SpecularTexture << std::endl;
 
             return s.str();
         }
@@ -72,6 +78,10 @@ namespace Obj
 
         float Shininess;
         float Refraction;
+
+        std::string AmbientTexture;
+        std::string DiffuseTexture;
+        std::string SpecularTexture;
     };
 
     /*!
@@ -123,15 +133,17 @@ namespace Obj
 
     /*!
     ** Loads an .obj file. Returns NULL if it fails.
+    **
+    ** @param filename Filename of the .obj file.
     */
-    File* Load(
-        const std::string& filename
-    );
+    File* Load(const std::string& filename);
 
     /*!
     ** Releases the .obj file. 
+    **
+    ** @param file File to be released.
     */
-    void Release(const File** file);
+    void Release(File** file);
     
     /*!
     ** Sets an error handler that handles in the event a line cannot be 

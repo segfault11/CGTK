@@ -20,7 +20,12 @@ namespace GLUE
 {
     /*!
     ** Creates an OpenGL 2D texture from an image file. The caller is 
-    ** responsible to release the texture.
+    ** responsible to release the texture. The texture is default configured to
+    ** have a liner minifying and magnification function as well as well as 
+    ** clamped wrapping.
+    ** 
+    ** NOTE: this function binds the newly created texture to the OpenGL context.
+    ** 
     **
     ** @param filename Filename of the image to be loaded.
     ** @return Handle to the texture if succeeded. Otherwise 0.
@@ -29,7 +34,9 @@ namespace GLUE
 
     /*!
     ** Saves the texture's image data as an bmp file. Fails if [filename]
-    ** does not end with ".bmp".
+    ** does not end with ".bmp". 
+    **
+    ** NOTE: this function binds the newly created texture to the OpenGL context.
     */
     void Texture2DSaveAsBMP(const char* filename, GLuint handle);
 }

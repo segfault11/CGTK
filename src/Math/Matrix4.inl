@@ -136,6 +136,17 @@ void Math::Matrix4<T>::MakeIdentity()
 }
 //------------------------------------------------------------------------------
 template<typename T>
+void Math::Matrix4<T>::MakeScale(const T& sx, const T& sy, const T& sz)
+{
+    this->MakeZero;
+
+    (*this)[0][0] = sx;
+    (*this)[1][1] = sy;
+    (*this)[2][2] = sz;
+    (*this)[3][3] = static_cast<T>(1);
+}
+//------------------------------------------------------------------------------
+template<typename T>
 void Math::Matrix4<T>::MakeZero()
 {
     for (unsigned int i = 0; i < 4; i++)

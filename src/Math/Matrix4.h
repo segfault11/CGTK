@@ -74,7 +74,24 @@ namespace Math
         */
         inline void MakeRotationY(const T& angle);
 
+        /*!
+        **  Turns the matrix to an OpenGL scale matrix. 
+        **
+        **  NOTE: 
+        **  THAT THE MATRIX IS STILL ROW MAJOR AND NEEDS TO BE TRANSPOSED WHEN 
+        **  BEING PASSED TO OPENGL.
+        */
+        inline void MakeScale(const T& sx, const T& sy, const T& sz);
+
+
+        /*!
+        ** Fills the matrix with zeroes.
+        */        
         inline void MakeZero();
+
+        /*!
+        ** Turns the matrix to an identity matrix.
+        */
         inline void MakeIdentity();
 
     private:    
