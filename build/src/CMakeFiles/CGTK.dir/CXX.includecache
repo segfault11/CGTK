@@ -244,27 +244,3 @@ string
 ../../Math/Vector2.h
 /Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/APP/UI/../../Math/Vector2.h
 
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../Error/Error.h
-
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../External/SOIL/SOIL.h
-
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../Util.h
-
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.cpp
-Texture.h
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.h
-cstring
--
-../Error/Error.h
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../Error/Error.h
-../External/SOIL/SOIL.h
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../External/SOIL/SOIL.h
-../Util.h
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/../Util.h
-iostream
--
-
-/Users/scatterbrain/Documents/Projects/GraphicsProgrammingPractice/CGTK/src/GLUE/Texture.h
-GL/GLEW.h
--
-

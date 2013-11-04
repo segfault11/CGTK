@@ -45,6 +45,11 @@ namespace Math
             const T& n, const T& f
         );
 
+        /*!
+        **  Turns the matrix to an OpenGL perspective matrix. NOTE THAT THE 
+        **  MATRIX IS STILL ROW MAJOR AND NEEDS TO BE TRANSPOSED WHEN BEING 
+        **  PASSED TO OPENGL.
+        */
         inline void MakePerspective(
             const T& fovy, 
             const T& aspect, 

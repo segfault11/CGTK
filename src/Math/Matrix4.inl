@@ -138,7 +138,7 @@ void Math::Matrix4<T>::MakeIdentity()
 template<typename T>
 void Math::Matrix4<T>::MakeScale(const T& sx, const T& sy, const T& sz)
 {
-    this->MakeZero;
+    this->MakeZero();
 
     (*this)[0][0] = sx;
     (*this)[1][1] = sy;
