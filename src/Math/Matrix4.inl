@@ -1,13 +1,13 @@
 //------------------------------------------------------------------------------
 template<typename T>
-Math::Vector4<T>& Math::Matrix4<T>::operator[](unsigned int i)
+CGKVector4<T>& CGKMatrix4<T>::operator[](unsigned int i)
 {
-    CGTK_ASSERT(i < 4)
+    CGK_ASSERT(i < 4)
     return data_[i];
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::Transpose()
+void CGKMatrix4<T>::Transpose()
 {
     unsigned int k = 1;
     for (unsigned int i = 0; i < 4; i++)
@@ -23,13 +23,13 @@ void Math::Matrix4<T>::Transpose()
 }
 //------------------------------------------------------------------------------
 template<typename T>
-const T* Math::Matrix4<T>::GetData() const
+const T* CGKMatrix4<T>::GetData() const
 {
     return &data_[0][0];
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::MakePerspective(
+void CGKMatrix4<T>::MakePerspective(
     const T& fovy, 
     const T& aspect, 
     const T& near, 
@@ -44,7 +44,7 @@ void Math::Matrix4<T>::MakePerspective(
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::MakePerspective(
+void CGKMatrix4<T>::MakePerspective(
     const T& l, const T& r, 
     const T& b, const T& t, 
     const T& n, const T& f
@@ -76,20 +76,19 @@ void Math::Matrix4<T>::MakePerspective(
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::MakeView(    
-    const Math::Vector3<T>& eye, 
-    const Math::Vector3<T>& f,
-    const Math::Vector3<T>& up
+void CGKMatrix4<T>::MakeView(    
+    const CGKVector3<T>& eye, 
+    const CGKVector3<T>& f,
+    const CGKVector3<T>& up
 )
 {
-    
-    Math::Vector3<T> n = eye - f;
+    CGKVector3<T> n = eye - f;
     n.Normalize();
     
-    Math::Vector3<T> u = up.Cross(n);
+    CGKVector3<T> u = up.Cross(n);
     u.Normalize();
 
-    Math::Vector3<T> v = n.Cross(u);
+    CGKVector3<T> v = n.Cross(u);
 
     T* raw = static_cast<T*>(data_[0]);
 
@@ -117,7 +116,7 @@ void Math::Matrix4<T>::MakeView(
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::MakeIdentity()
+void CGKMatrix4<T>::MakeIdentity()
 {
     for (unsigned int i = 0; i < 4; i++)
     {
@@ -136,7 +135,7 @@ void Math::Matrix4<T>::MakeIdentity()
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::MakeScale(const T& sx, const T& sy, const T& sz)
+void CGKMatrix4<T>::MakeScale(const T& sx, const T& sy, const T& sz)
 {
     this->MakeZero();
 
@@ -147,7 +146,7 @@ void Math::Matrix4<T>::MakeScale(const T& sx, const T& sy, const T& sz)
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::MakeZero()
+void CGKMatrix4<T>::MakeZero()
 {
     for (unsigned int i = 0; i < 4; i++)
     {
@@ -159,7 +158,7 @@ void Math::Matrix4<T>::MakeZero()
 }
 //------------------------------------------------------------------------------
 template<typename T>
-void Math::Matrix4<T>::MakeRotationY(const T& angle)
+void CGKMatrix4<T>::MakeRotationY(const T& angle)
 {
     this->MakeZero();
 

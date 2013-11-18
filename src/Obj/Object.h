@@ -29,140 +29,118 @@
 #include "../Math/Vector3.h"
 #include <vector>
 
-namespace Obj
+
+    /// Stores the material for each face.
+class CGKObjMaterial
 {
-
-    /*!
-    ** Stores the material for each face.
-    */
-    class Material
+public:
+    CGKObjMaterial()
+    :
+        Name(""), 
+        Ambient(CGKVector3f(0.0f, 0.0f, 0.0f)),
+        Diffuse(CGKVector3f(0.0f, 0.0f, 0.0f)),
+        Specular(CGKVector3f(0.0f, 0.0f, 0.0f)),
+        Shininess(1.0f),
+        Refraction(0.0f),
+        AmbientTexture(""),
+        DiffuseTexture(""),
+        SpecularTexture("")
     {
-    public:
-        Material()
-        :
-            Name(""), 
-            Ambient(Math::Vector3F(0.0f, 0.0f, 0.0f)),
-            Diffuse(Math::Vector3F(0.0f, 0.0f, 0.0f)),
-            Specular(Math::Vector3F(0.0f, 0.0f, 0.0f)),
-            Shininess(1.0f),
-            Refraction(0.0f),
-            AmbientTexture(""),
-            DiffuseTexture(""),
-            SpecularTexture("")
-        {
 
-        }
+    }
 
-        std::string ToString() const
-        {
-            std::stringstream s;
-            s << "Name: " << Name << std::endl;
-            s << "Ambient Reflection:  " << Ambient.ToString() << std::endl;
-            s << "Diffuse Reflection:  " << Diffuse.ToString() << std::endl;
-            s << "Specular Reflection: " << Specular.ToString() << std::endl;
-            s << "Shininess:  " << Shininess << std::endl;
-            s << "Refraction: " << Refraction << std::endl;
-            s << "AmbientTexture: " << AmbientTexture << std::endl;
-            s << "DiffuseTexture: " << DiffuseTexture << std::endl;
-            s << "SpecularTexture: " << SpecularTexture << std::endl;
-
-            return s.str();
-        }
-
-
-        std::string Name;
-
-        Math::Vector3F Ambient;
-        Math::Vector3F Diffuse;
-        Math::Vector3F Specular;
-
-        float Shininess;
-        float Refraction;
-
-        std::string AmbientTexture;
-        std::string DiffuseTexture;
-        std::string SpecularTexture;
-    };
-
-    /*!
-    ** Stores a face, that is a triangle.
-    */
-    class Face
+    std::string ToString() const
     {
-    public:
-        Math::Tuple3UI PositionIndices; 
-        Math::Tuple3UI TexCoordsIndices; 
-        Math::Tuple3UI NormalIndices;
-        unsigned int MaterialIndex; 
-    };
+        std::stringstream s;
+        s << "Name: " << Name << std::endl;
+        s << "Ambient Reflection:  " << Ambient.ToString() << std::endl;
+        s << "Diffuse Reflection:  " << Diffuse.ToString() << std::endl;
+        s << "Specular Reflection: " << Specular.ToString() << std::endl;
+        s << "Shininess:  " << Shininess << std::endl;
+        s << "Refraction: " << Refraction << std::endl;
+        s << "AmbientTexture: " << AmbientTexture << std::endl;
+        s << "DiffuseTexture: " << DiffuseTexture << std::endl;
+        s << "SpecularTexture: " << SpecularTexture << std::endl;
 
-    /*!
-    ** Stores the name of the group and its faces
-    */
-    class Group
-    {
-    public:
-        std::string Name;
-        std::vector<Face> Faces;
-    };
+        return s.str();
+    }
 
-    /*!
-    ** Stores an Object
-    */
-    class Object
-    {
-    public:
-        std::string Name;
-        std::vector<Group> Groups;
-    };
+    std::string Name;
 
-    /*!
-    ** A description of an .obj file
-    */
-    class File
-    {
-    public:
-        std::string Name;
-        std::vector<Math::Vector3F> Positions;
-        std::vector<Math::Vector2F> TexCoords;
-        std::vector<Math::Vector3F> Normals;
+    CGKVector3f Ambient;
+    CGKVector3f Diffuse;
+    CGKVector3f Specular;
 
-        std::vector<Material> Materials;
-        std::vector<Object> Objects;
-    };
+    float Shininess;
+    float Refraction;
 
-    /*!
-    ** Loads an .obj file. Returns NULL if it fails.
-    **
-    ** @param filename Filename of the .obj file.
-    */
-    File* Load(const std::string& filename);
+    std::string AmbientTexture;
+    std::string DiffuseTexture;
+    std::string SpecularTexture;
+};
 
-    /*!
-    ** Releases the .obj file. 
-    **
-    ** @param file File to be released.
-    */
-    void Release(File** file);
+/// Stores a face, that is a triangle.
+class CGKObjFace
+{
+public:
+    CGKTuple3ui PositionIndices; 
+    CGKTuple3ui TexCoordsIndices; 
+    CGKTuple3ui NormalIndices;
+    unsigned int MaterialIndex; 
+};
+
+/// Stores the name of the group and its faces
+class CGKObjGroup
+{
+public:
+    std::string Name;
+    std::vector<CGKObjFace> Faces;
+};
+
+/// Stores an Object
+class CGKObjObject
+{
+public:
+    std::string Name;
+    std::vector<CGKObjGroup> Groups;
+};
+
+/// A description of an .obj file
+class CGKObjFile
+{
+public:
+    std::string Name;
+    std::vector<CGKVector3f> Positions;
+    std::vector<CGKVector2f> TexCoords;
+    std::vector<CGKVector3f> Normals;
+
+    std::vector<CGKObjMaterial> Materials;
+    std::vector<CGKObjObject> Objects;
+};
+
+/// Loads an .obj file. Returns NULL if it fails.
+///
+/// @param filename Filename of the .obj file.
+CGKObjFile* CGKObjLoad(const std::string& filename);
+
+/// Releases the .obj file. 
+///
+/// @param file File to be released.
+void CGKObjFileRelease(CGKObjFile** file);
     
-    /*!
-    ** Sets an error handler that handles in the event a line cannot be 
-    ** interpreted.
-    */
-    void SetErrorHander(
-        void (*errorHandler)(
-            const std::string& filename,
-            unsigned int lineNumber, 
-            const std::string& line
-        )
-    );
+/// Sets an error handler that handles in the event a line cannot be 
+/// interpreted.
+void SetErrorHander(
+    void (*errorHandler)(
+        const std::string& filename,
+        unsigned int lineNumber, 
+        const std::string& line
+    )
+);
 
-    /*!
-    ** Dumps the file to the console.
-    */
-    void Dump(const File* file);
+// Dumps the file to the console.
+void CGKObjDump(const CGKObjFile* file);
 
-}
 
  
 #endif /* end of include guard: OBJECT_H__ */

@@ -7,27 +7,25 @@
 //------------------------------------------------------------------------------
 #define MAX_NAME_LENGTH 1024
 //------------------------------------------------------------------------------
-//                         FILE PRIVATE DECLARATIONS
-//------------------------------------------------------------------------------
 static void readLine(std::string& line, std::ifstream& file);
 static void processLine(
-    Obj::File& file, 
+    CGKObjFile& file, 
     unsigned int lineNo, 
     std::string& line
 );
 static void processMatLine(
-    Obj::File& file, 
+    CGKObjFile& file, 
     unsigned int lineNo, 
     std::string& line
 );
-static bool addObject(Obj::File& file, std::string& line);
-static bool addGroup(Obj::File& file, std::string& line);
-static bool addPosition(Obj::File& file, std::string& line);
-static bool addNormal(Obj::File& file, std::string& line);
-static bool addTexCoord(Obj::File& file, std::string& line);
-static bool addFace(Obj::File& file, std::string& line);
-static bool setCurrentMaterial(Obj::File& file, std::string& line);
-static bool readMaterialFile(Obj::File& file, std::string& line);
+static bool addObject(CGKObjFile& file, std::string& line);
+static bool addGroup(CGKObjFile& file, std::string& line);
+static bool addPosition(CGKObjFile& file, std::string& line);
+static bool addNormal(CGKObjFile& file, std::string& line);
+static bool addTexCoord(CGKObjFile& file, std::string& line);
+static bool addFace(CGKObjFile& file, std::string& line);
+static bool setCurrentMaterial(CGKObjFile& file, std::string& line);
+static bool readMaterialFile(CGKObjFile& file, std::string& line);
 static void reportError(
     const std::string& filename,
     unsigned int lineNumber, 
@@ -46,7 +44,7 @@ static unsigned int matIndex_;
 //------------------------------------------------------------------------------
 //                           PUBLIC DEFINITIONS
 //------------------------------------------------------------------------------
-Obj::File* Obj::Load(
+CGKObjFile* CGKObjLoad(
     const std::string& filename
 )
 {
@@ -63,18 +61,18 @@ Obj::File* Obj::Load(
     }
 
     // create an .obj file struct to store the files contents
-    Obj::File* objFile = new Obj::File();
+    CGKObjFile* objFile = new CGKObjFile();
 
     // save the name of the file
     objFile->Name = filename;
 
     // set the first entries of the positions, tex coords and normals to NULL
-    objFile->Positions.push_back(Math::Vector3F(0.0f, 0.0f, 0.0f));
-    objFile->TexCoords.push_back(Math::Vector2F(0.0f, 0.0f));
-    objFile->Normals.push_back(Math::Vector3F(0.0f, 0.0f, 0.0f));
+    objFile->Positions.push_back(CGKVector3f(0.0f, 0.0f, 0.0f));
+    objFile->TexCoords.push_back(CGKVector2f(0.0f, 0.0f));
+    objFile->Normals.push_back(CGKVector3f(0.0f, 0.0f, 0.0f));
 
     // set the first material to be a default material
-    objFile->Materials.push_back(Material());
+    objFile->Materials.push_back(CGKObjMaterial());
 
     // set the current material index to 0 (the default index)
     matIndex_ = 0;
@@ -93,13 +91,13 @@ Obj::File* Obj::Load(
     return objFile;
 }
 //------------------------------------------------------------------------------
-void Obj::Release(Obj::File** file)
+void CGKObjRelease(CGKObjFile** file)
 {
     delete *file;
     *file = NULL;
 }
 //------------------------------------------------------------------------------
-void Obj::SetErrorHander(
+void CGKObjSetErrorHander(
     void (*errorHandler)(
         const std::string& filename,
         unsigned int lineNumber, 
@@ -110,7 +108,7 @@ void Obj::SetErrorHander(
     errorHandler_ = errorHandler;
 }
 //------------------------------------------------------------------------------
-void Obj::Dump(const Obj::File* file)
+void CGKObjDump(const CGKObjFile* file)
 {
 
     std::cout << "+-------------------------------------------------------------------" << std::endl;
@@ -144,10 +142,10 @@ void Obj::Dump(const Obj::File* file)
 
             for (unsigned int k = 0; k < numFaces; k++)
             {
-                const Obj::Face& f = file->Objects[i].Groups[j].Faces[k];
-                const Math::Tuple3UI& p = f.PositionIndices;
-                const Math::Tuple3UI& t = f.TexCoordsIndices;
-                const Math::Tuple3UI& n = f.NormalIndices;
+                const CGKObjFace& f = file->Objects[i].Groups[j].Faces[k];
+                const CGKTuple3ui& p = f.PositionIndices;
+                const CGKTuple3ui& t = f.TexCoordsIndices;
+                const CGKTuple3ui& n = f.NormalIndices;
 
                 std::cout << "\t\t" 
                     << p[0] << "/" << t[0] << "/" << n[0] << " "
@@ -165,7 +163,7 @@ void Obj::Dump(const Obj::File* file)
 
     for (unsigned int i = 0; i < file->Positions.size(); i++)
     {
-        const Math::Vector3F& pos = file->Positions[i];
+        const CGKVector3f& pos = file->Positions[i];
         std::cout << "\t" << pos.ToString() << std::endl;
     }
 
@@ -175,7 +173,7 @@ void Obj::Dump(const Obj::File* file)
 
     for (unsigned int i = 0; i < file->TexCoords.size(); i++)
     {
-        const Math::Vector2F& tc = file->TexCoords[i];
+        const CGKVector2f& tc = file->TexCoords[i];
         std::cout << "\t" << tc.ToString() << std::endl;
     }
 
@@ -185,7 +183,7 @@ void Obj::Dump(const Obj::File* file)
 
     for (unsigned int i = 0; i < file->Normals.size(); i++)
     {
-        const Math::Vector3F& nrm = file->Normals[i];
+        const CGKVector3f& nrm = file->Normals[i];
         std::cout << "\t" << nrm.ToString() << std::endl;
     }
 }
@@ -197,7 +195,7 @@ void readLine(std::string& line, std::ifstream& file)
     std::getline(file, line);
 }
 //------------------------------------------------------------------------------
-void processLine(Obj::File& file, unsigned int lineNo, std::string& line)
+void processLine(CGKObjFile& file, unsigned int lineNo, std::string& line)
 {
     #define CHECK_ERR(x) if (!x) {reportError(filename_, lineNo, line);}
     
@@ -254,9 +252,9 @@ void processLine(Obj::File& file, unsigned int lineNo, std::string& line)
 
 }
 //------------------------------------------------------------------------------
-bool addPosition(Obj::File& file, std::string& line)
+bool addPosition(CGKObjFile& file, std::string& line)
 {
-    Math::Vector3F pos;    
+    CGKVector3f pos;    
     int n = std::sscanf(line.c_str(), "v %f %f %f", &pos[0], &pos[1], &pos[2]);
     
     if (n != 3)
@@ -269,9 +267,9 @@ bool addPosition(Obj::File& file, std::string& line)
     return true;
 }
 //------------------------------------------------------------------------------
-bool addNormal(Obj::File& file, std::string& line)
+bool addNormal(CGKObjFile& file, std::string& line)
 {
-    Math::Vector3F nrm;
+    CGKVector3f nrm;
     int n = std::sscanf(line.c_str() , "vn %f %f %f", &nrm[0], &nrm[1], &nrm[2]);
 
     if (n != 3)
@@ -284,9 +282,9 @@ bool addNormal(Obj::File& file, std::string& line)
     return true;
 }
 //------------------------------------------------------------------------------
-bool addTexCoord(Obj::File& file, std::string& line)
+bool addTexCoord(CGKObjFile& file, std::string& line)
 {
-    Math::Vector2F tc;
+    CGKVector2f tc;
     int n = std::sscanf(line.c_str() , "vt %f %f", &tc[0], &tc[1]);
 
     if (n != 2)
@@ -299,13 +297,13 @@ bool addTexCoord(Obj::File& file, std::string& line)
     return true;   
 }
 //------------------------------------------------------------------------------
-bool addFace(Obj::File& file, std::string& line)
+bool addFace(CGKObjFile& file, std::string& line)
 {
     // check if an object struct already exists, if not create an "anonymous" 
     // one (i.e. one without a name)
     if (file.Objects.size() == 0)
     {
-        Obj::Object o;
+        CGKObjObject o;
         o.Name = std::string("");
         file.Objects.push_back(o);
     }
@@ -313,20 +311,20 @@ bool addFace(Obj::File& file, std::string& line)
     // if the current object has no groups add an anonymous group
     if (file.Objects[file.Objects.size() - 1].Groups.size() == 0)
     {
-        Obj::Group g;
+        CGKObjGroup g;
         g.Name = std::string("");
         file.Objects[file.Objects.size() - 1].Groups.push_back(g);
     }    
 
     // default init the face
-    Obj::Face f;
+    CGKObjFace f;
 
-    Math::Tuple3UI& posIds = f.PositionIndices;
-    Math::Tuple3UI& tcIds = f.TexCoordsIndices;
+    CGKTuple3ui& posIds = f.PositionIndices;
+    CGKTuple3ui& tcIds = f.TexCoordsIndices;
     tcIds[0] = 0;
     tcIds[1] = 0;
     tcIds[2] = 0;
-    Math::Tuple3UI& nrmIds = f.NormalIndices;
+    CGKTuple3ui& nrmIds = f.NormalIndices;
     nrmIds[0] = 0;
     nrmIds[1] = 0;
     nrmIds[2] = 0;
@@ -399,7 +397,7 @@ bool addFace(Obj::File& file, std::string& line)
     return false;
 }
 //------------------------------------------------------------------------------
-bool addObject(Obj::File& file, std::string& line)
+bool addObject(CGKObjFile& file, std::string& line)
 {
     // ADDS AN OBJECT TO THE FILE STRUCTURE, RETURNS FALSE IF NO NAME COULD
     // BE FOUND
@@ -412,14 +410,14 @@ bool addObject(Obj::File& file, std::string& line)
         return false;
     }
 
-    Obj::Object newObject;
+    CGKObjObject newObject;
     newObject.Name = name;
     file.Objects.push_back(newObject);
 
     return true;
 }
 //------------------------------------------------------------------------------
-bool addGroup(Obj::File& file, std::string& line)
+bool addGroup(CGKObjFile& file, std::string& line)
 {
     char name[MAX_NAME_LENGTH];
     int n = std::sscanf(line.c_str(), "g %s", name);
@@ -432,12 +430,12 @@ bool addGroup(Obj::File& file, std::string& line)
     // if currently no object exists, add an anonymous one
     if (file.Objects.size() == 0)
     {
-        Obj::Object o;
+        CGKObjObject o;
         o.Name = std::string("");
     }
 
     // add a group to the current object
-    Obj::Group g;
+    CGKObjGroup g;
     g.Name = std::string(name);
 
     file.Objects[file.Objects.size() - 1].Groups.push_back(g);
@@ -445,7 +443,7 @@ bool addGroup(Obj::File& file, std::string& line)
     return true;
 }
 //------------------------------------------------------------------------------
-bool setCurrentMaterial(Obj::File& file, std::string& line)
+bool setCurrentMaterial(CGKObjFile& file, std::string& line)
 {
     char matName[MAX_NAME_LENGTH];
 
@@ -469,7 +467,7 @@ bool setCurrentMaterial(Obj::File& file, std::string& line)
     return true;
 }
 //------------------------------------------------------------------------------
-static bool readMaterialFile(Obj::File& file, std::string& line)
+static bool readMaterialFile(CGKObjFile& file, std::string& line)
 {
     // READS IN A LINE FROM A MATERIAL FILE
 
@@ -507,7 +505,7 @@ static bool readMaterialFile(Obj::File& file, std::string& line)
     return true;
 }
 //------------------------------------------------------------------------------
-void processMatLine(Obj::File& file, unsigned int lineNo, std::string& line)
+void processMatLine(CGKObjFile& file, unsigned int lineNo, std::string& line)
 {
     // READS IN ONE LINE [line] FROM AN [.mtl] FILE
 
@@ -523,7 +521,7 @@ void processMatLine(Obj::File& file, unsigned int lineNo, std::string& line)
             reportError(filenameMat_, lineNo, line);
         }
 
-        Obj::Material mat;
+        CGKObjMaterial mat;
         mat.Name = std::string(matName);
         file.Materials.push_back(mat);
     }
@@ -560,7 +558,7 @@ void processMatLine(Obj::File& file, unsigned int lineNo, std::string& line)
 
     if (line.find("Ka") == 0)
     {
-        Math::Vector3F ambient;
+        CGKVector3f ambient;
 
         int n = std::sscanf(
                 line.c_str(), 
@@ -582,7 +580,7 @@ void processMatLine(Obj::File& file, unsigned int lineNo, std::string& line)
 
     if (line.find("Kd") == 0)
     {
-        Math::Vector3F diffuse;
+        CGKVector3f diffuse;
 
         int n = std::sscanf(
                 line.c_str(), 
@@ -604,7 +602,7 @@ void processMatLine(Obj::File& file, unsigned int lineNo, std::string& line)
 
     if (line.find("Ks") == 0)
     {
-        Math::Vector3F specular;
+        CGKVector3f specular;
 
         int n = std::sscanf(
                 line.c_str(), 

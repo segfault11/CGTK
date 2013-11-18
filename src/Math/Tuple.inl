@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------------
 template<unsigned int DIM, typename TYPE>
-Tuple<DIM, TYPE>::Tuple()
+CGKTuple<DIM, TYPE>::CGKTuple()
 {
     for (unsigned int i = 0; i < DIM; i++)
     {
@@ -9,13 +9,13 @@ Tuple<DIM, TYPE>::Tuple()
 }
 //------------------------------------------------------------------------------
 template<unsigned int DIM, typename TYPE>
-Tuple<DIM, TYPE>::Tuple(const Tuple& orig)
+CGKTuple<DIM, TYPE>::CGKTuple(const CGKTuple& orig)
 {
     *this = orig; 
 }
 //------------------------------------------------------------------------------
 template<unsigned int DIM, typename TYPE>
-Tuple<DIM, TYPE>& Tuple<DIM, TYPE>::operator=(const Tuple& orig)
+CGKTuple<DIM, TYPE>& CGKTuple<DIM, TYPE>::operator=(const CGKTuple& orig)
 {
     for (unsigned int i = 0; i < DIM; i++)
     {
@@ -25,7 +25,7 @@ Tuple<DIM, TYPE>& Tuple<DIM, TYPE>::operator=(const Tuple& orig)
 }
 //------------------------------------------------------------------------------
 template<unsigned int DIM, typename TYPE>
-Tuple<DIM, TYPE>& Tuple<DIM, TYPE>::operator=(const TYPE& a)
+CGKTuple<DIM, TYPE>& CGKTuple<DIM, TYPE>::operator=(const TYPE& a)
 {
     for (unsigned int i = 0; i < DIM; i++)
     {
@@ -35,13 +35,13 @@ Tuple<DIM, TYPE>& Tuple<DIM, TYPE>::operator=(const TYPE& a)
 }
 //------------------------------------------------------------------------------
 template<unsigned int DIM, typename TYPE>
-TYPE& Tuple<DIM, TYPE>::operator[](unsigned int i)
+TYPE& CGKTuple<DIM, TYPE>::operator[](unsigned int i)
 {
     return data_[i];
 }
 //------------------------------------------------------------------------------
 template<unsigned int DIM, typename TYPE>
-const TYPE& Tuple<DIM, TYPE>::operator[](unsigned int i) const
+const TYPE& CGKTuple<DIM, TYPE>::operator[](unsigned int i) const
 {
     return data_[i];
 }
